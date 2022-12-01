@@ -1,6 +1,7 @@
 # PytorchResearchCodesReading
 An organized list of open source code for some research papers I have read.
 
+# Euclidean spatial data
 
 ## SSKD
 
@@ -32,5 +33,35 @@ The implementation of the paper [FedClassAvg: Local Representation Learning for 
 
 The official pytorch implementation of our paper [MEAL V2: Boosting Vanilla ResNet-50 to 80%+ Top-1 Accuracy on ImageNet without Tricks](https://github.com/szq0214/MEAL-V2)
 ![架构图](https://user-images.githubusercontent.com/3794909/92182326-6f78c400-ee19-11ea-80e4-2d6e4d73ce82.png)
+
+
+
+# Non-Euclidean spatial data - Graph
+
+## FedGCN
+The implement of the paper [NONE](https://github.com/WHDY/FedGCN) 
+
+It is uncertain whether it is the official code of this paper：FedGCN: Federated Learning-Based Graph Convolutional Networks for Non-Euclidean Spatial Data (Mathematics 2022) ?
+
+
+
+## FedGCN
+
+The official code of paper [FedGCN: Convergence and Communication Tradeoffs in
+Federated Training of Graph Convolutional Networks](https://github.com/yh-yao/FedGCN)
+
+![image](https://user-images.githubusercontent.com/23145731/205077875-f3031385-ac9e-4514-9903-252698f14809.png)
+
+
+## GCFL
+
+This repository contains the implementation of the paper [Federated Graph Classification over Non-IID Graphs](https://github.com/Oxfordblue7/GCFL) (NeurIPS 2021)
+
+[paper](https://arxiv.org/pdf/2106.13423.pdf)
+
+
+
+
+
 
 
