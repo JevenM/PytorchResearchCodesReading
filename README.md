@@ -51,7 +51,7 @@ The implementation of paper [Knowledge Distillation Meets Self-Supervision]() (E
 The PyTorch code of paper [FedX: Unsupervised Federated Learning with Cross Knowledge Distillation](https://arxiv.org/abs/2207.09158) (ECCV 2022).
 ![架构图](./intro.png)
 
-[code]()
+[code](https://github.com/Sungwon-Han/FEDX)
 
 
 ## CRD
