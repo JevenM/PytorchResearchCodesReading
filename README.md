@@ -49,7 +49,12 @@ The implementation of paper [Knowledge Distillation Meets Self-Supervision]() (E
 ## FedX
 
 The PyTorch code of paper [FedX: Unsupervised Federated Learning with Cross Knowledge Distillation](https://arxiv.org/abs/2207.09158) (ECCV 2022).
+
+The authors propose an unsupervised federated learning algorithm, FedX, that learns data representations via a unique two-sided knowledge distillation at local and global levels.
+
 ![架构图](./intro.png)
+
+### Overall model architecture
 
 ![image](https://github.com/Sungwon-Han/FEDX/raw/main/figure/model_arch.png)
 
