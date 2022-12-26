@@ -5,6 +5,23 @@ An organized list of open source code for some research papers I have read.
 
 
 
+## Benchmark
+
+LEAF: A Benchmark for Federated Settings
+
+[code](https://github.com/TalwalkarLab/leaf)
+
+### Resources
+Homepage: [leaf.cmu.edu](https://leaf.cmu.edu/)
+
+Paper: ["LEAF: A Benchmark for Federated Settings"](https://arxiv.org/abs/1812.01097)
+
+
+
+
+
+
+
 
 # Euclidean spatial data
 
@@ -68,6 +85,13 @@ The implementation of the following ICLR 2020 paper [Contrastive Representation 
 [code](https://github.com/HobbitLong/RepDistiller)
 
 <center><img src="https://camo.githubusercontent.com/1dc5b188095cfa936653171b3cd23793d872c1c25438a034ade65c4db382f22d/687474703a2f2f686f626269746c6f6e672e6769746875622e696f2f4352442f4352445f66696c65732f7465617365722e6a7067"></center>
+
+
+## FedSkip
+
+The code for paper(ICDM22 Regular Paper) [FedSkip: Combatting Statistical Heterogeneity with Federated Skip Aggregation].
+
+
 
 
 ## FedClassAvg
@@ -254,6 +278,15 @@ This repository contains the implementation of the paper [Federated Graph Classi
 ```
 
 
+
+# Acknowledgement
+We borrow some codes from [MOON], [LEAF] and [FedProx]
+
+# Attention
+Here we provide code of FedSkip for cifar10 and cifar100. Other datasets and methods will be updated soon.
+
+# Contact
+If you have any problem with this code, please feel free to contact xxx@stu.xidian.edu.cn.
 
 
 
