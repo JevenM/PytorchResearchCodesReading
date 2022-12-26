@@ -91,6 +91,9 @@ The implementation of the following ICLR 2020 paper [Contrastive Representation 
 
 The code for paper(ICDM22 Regular Paper) [FedSkip: Combatting Statistical Heterogeneity with Federated Skip Aggregation].
 
+[code](https://github.com/MediaBrain-SJTU/FedSkip)
+
+![image](https://user-images.githubusercontent.com/23145731/209555744-2a25d92c-c7cf-4a4a-9250-4ea1f0df229b.png)
 
 
 
