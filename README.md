@@ -52,6 +52,13 @@ This is the code for paper [Model-Contrastive Federated Learning](https://arxiv.
 
 Abstract: Federated learning enables multiple parties to collaboratively train a machine learning model without communicating their local data. A key challenge in federated learning is to handle the heterogeneity of local data distribution across parties. Although many studies have been proposed to address this challenge, we find that they fail to achieve high performance in image datasets with deep learning models. In this paper, we propose MOON: model-contrastive federated learning. MOON is a simple and effective federated learning framework. The key idea of MOON is to utilize the similarity between model representations to correct the local training of individual parties, i.e., conducting contrastive learning in model-level. Our extensive experiments show that MOON significantly outperforms the other state-of-the-art federated learning algorithms on various image classification tasks.
 
+![image](https://user-images.githubusercontent.com/23145731/221130206-40178869-6f47-428f-b1b7-d71545697121.png)
+
+
+### Tiny-ImageNet
+
+You can download Tiny-ImageNet [here](http://cs231n.stanford.edu/tiny-imagenet-200.zip). Then, you can follow the [instructions](https://github.com/AI-secure/DBA/blob/master/utils/tinyimagenet_reformat.py) to reformat the validation folder.
+
 
 ## SSKD
 
@@ -107,13 +114,15 @@ The implementation of the paper [FedClassAvg: Local Representation Learning for 
 
 
 
-## MEAL V2
+## MEAL-V2
 
 The official pytorch implementation of our paper [MEAL V2: Boosting Vanilla ResNet-50 to 80%+ Top-1 Accuracy on ImageNet without Tricks]()
 
 [code](https://github.com/szq0214/MEAL-V2)
 
 ![架构图](https://user-images.githubusercontent.com/3794909/92182326-6f78c400-ee19-11ea-80e4-2d6e4d73ce82.png)
+
+In this paper, we introduce a simple yet effective approach that can boost the vanilla ResNet-50 to 80%+ Top-1 accuracy on ImageNet without any tricks. Generally, our method is based on the recently proposed MEAL, i.e., ensemble knowledge distillation via discriminators. We further simplify it through 1) adopting the similarity loss and discriminator only on the final outputs and 2) using the average of softmax probabilities from all teacher ensembles as the stronger supervision for distillation. One crucial perspective of our method is that the one-hot/hard label should not be used in the distillation process. We show that such a simple framework can achieve state-of-the-art results without involving any commonly-used tricks, such as 1) architecture modification; 2) outside training data beyond ImageNet; 3) autoaug/randaug; 4) cosine learning rate; 5) mixup/cutmix training; 6) label smoothing; etc.
 
 
 ## FLIS
@@ -216,6 +225,17 @@ Please note that you should train a teacher model( PSPNet model of ResNet50 back
 @inproceedings{zhao2018psanet, title={{PSANet}: Point-wise Spatial Attention Network for Scene Parsing}, author={Zhao, Hengshuang and Zhang, Yi and Liu, Shu and Shi, Jianping and Loy, Chen Change and Lin, Dahua and Jia, Jiaya}, booktitle={ECCV}, year={2018} }
 ```
 
+## PSPNet-logits and feature-distillation
+
+This repository is based on PSPNet and modified from semseg and Pixelwise_Knowledge_Distillation_PSPNet18 which uses a logits knowledge distillation method to teach the PSPNet model of ResNet18 backbone with the PSPNet model of ResNet50 backbone. All the models are trained and tested on the PASCAL-VOC2012 dataset(Enhanced Version).
+
+[code](https://github.com/asaander719/PSPNet-knowledge-distillation)
+
+### Innovation and Limitations
+
+This repo adds a feature distillation in the aux layer of PSPNet without a linear feature mapping since the teacher and student model's output dimension after the aux layer is the same. On the other hand, if you want to adapt this repo to other structures, a mapping should be needed. Also, the output of the aux layer is very close to which of the final layer, so you should pay attention to the overfitting problem. Or you can distillate the features in earlier layers and add a mapping, of course, just like Fitnet.
+
+
 ## CDKT-FL
 
 This repository implements all experiments for knowledge transfer in federated learning.
@@ -280,7 +300,42 @@ This repository contains the implementation of the paper [Federated Graph Classi
 }
 ```
 
+# Attacks against FL
 
+## DBA
+
+In this repository, code is for our ICLR 2020 paper [DBA: Distributed Backdoor Attacks against Federated Learning](https://openreview.net/forum?id=rkgyS0VFvr)
+
+[code](https://github.com/AI-secure/DBA)
+
+## Backdoor FL
+
+This code includes experiments for paper "How to Backdoor Federated Learning" (https://arxiv.org/abs/1807.00459)
+
+[code](https://github.com/ebagdasa/backdoor_federated_learning)
+
+
+## Backdoors101
+
+11/20/2020: We are developing a new framework for backdoors with FL: Backdoors101. It extends to many new attacks (clean-label, physical backdoors, etc) and has improved user experience. Check it out!
+
+![image](https://user-images.githubusercontent.com/23145731/221131594-9a935434-6462-42ef-b37f-b391cef63ff1.png)
+
+
+[code](https://github.com/ebagdasa/backdoors101)
+
+Backdoors 101 — is a PyTorch framework for state-of-the-art backdoor defenses and attacks on deep learning models. It includes real-world datasets, centralized and federated learning, and supports various attack vectors. The code is mostly based on "Blind Backdoors in Deep Learning Models (USENIX'21)" and "How To Backdoor Federated Learning (AISTATS'20)" papers, but we always look for incorporating newer results.
+
+If you have a new defense or attack, let us know (raise an issue or send an email), happy to help porting it. If you are doing research on backdoors and want some assistance don't hesitate to ask questions.
+
+
+Here is the high-level overview of the possible attack vectors:
+![image](https://user-images.githubusercontent.com/23145731/221132302-6dfe3b4c-1d8f-42f1-ae41-38d0450e9173.png)
+
+Backdoors
+- Pixel-pattern (incl. single-pixel) - traditional pixel modification attacks.
+- Physical - attacks that are triggered by physical objects.
+- Semantic backdoors - attacks that don't modify the input (e.g. react on features already present in the scene).
 
 # Acknowledgement
 We borrow some codes from [MOON], [LEAF] and [FedProx]
