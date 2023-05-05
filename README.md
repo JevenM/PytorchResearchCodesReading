@@ -263,10 +263,42 @@ This repository does not only implement pFedMe but also FedAvg, and Per-FedAvg a
 
 
 
-
+---
 
 
 # Non-Euclidean spatial data - Graph
+
+## GNN-benchmark
+
+This library provides a unified test bench for evaluating graph neural network (GNN) models on the transductive node classification task. The framework provides a simple interface for running different models on several datasets while using multiple train/validation/test splits. In addition, the framework allows to automatically perform hyperparameter tuning for all the models using random search.
+
+This framework uses Sacred as a backend for keeping track of experimental results, and all the GNN models are implemented in `TensorFlow`. The current version only supports training models on GPUs. This package was tested on Ubuntu 16.04 LTS with Python 3.6.6.
+
+[code](https://github.com/shchur/gnn-benchmark/)
+
+[paper](https://arxiv.org/abs/1811.05868)
+
+## GraphGallery
+
+GraphGallery is a gallery for benchmarking Graph Neural Networks (GNNs) based on pure PyTorch backend. Alteratively, [Pytorch Geometric (PyG)](https://github.com/pyg-team/pytorch_geometric) and [Deep Graph Library (DGL) ](https://www.dgl.ai/) backend are also available in GraphGallery to facilitate your implementations.
+
+[code](https://github.com/EdisonLeeeee/GraphGallery)
+
+
+## Planetoid
+
+This is an implementation of Planetoid, a graph-based semi-supervised learning method proposed in the following paper:
+
+[Revisiting Semi-Supervised Learning with Graph Embeddings](https://arxiv.org/abs/1603.08861). Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov. ICML 2016.
+
+Please cite the above paper if you use the datasets or code in this repo.
+
+### Models
+
+The models are implemented mainly in trans_model.py (transductive) and ind_model.py (inductive), with inheritance from base_model.py. You might refer to the source files for detailed API documentation.
+
+[code](https://github.com/kimiyoung/planetoid/tree/master)
+
 
 ## GraphFL
 
