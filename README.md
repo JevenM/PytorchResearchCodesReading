@@ -345,6 +345,15 @@ This repository contains the implementation of the paper [Federated Graph Classi
 }
 ```
 
+## FedGCD
+
+FedGCD: Federated Learning Algorithm with GNN based Community Detection
+
+[code](https://github.com/SynProngs/FedGCD)
+
+paper: Not found.
+
+
 ## Graph Contrastive Partial Multi-View Clustering
 
 This repo contains the demo code and data of our IEEE TMM'2022 paper Graph Contrastive Partial Multi-View Clustering
