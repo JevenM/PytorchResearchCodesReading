@@ -70,6 +70,19 @@ The implementation of paper [Knowledge Distillation Meets Self-Supervision]() (E
 [code](https://github.com/xuguodong03/SSKD)
 
 
+## FedGen
+
+Research code that accompanies the paper [Data-Free Knowledge Distillation for Heterogeneous Federated](https://arxiv.org/pdf/2105.10056.pdf).
+
+It contains implementation of the following algorithms:
+* **FedGen** (the proposed algorithm) ([code](https://github.com/zhuangdizhu/FedGen/blob/main/FLAlgorithms/servers/serverpFedGen.py)).
+* **FedAvg** ([paper](https://arxiv.org/pdf/1602.05629.pdf) and [code](https://github.com/zhuangdizhu/FedGen/blob/main/FLAlgorithms/servers/serveravg.py)).
+* **FedProx** ([paper](https://arxiv.org/pdf/1812.06127.pdf) and [code](https://github.com/zhuangdizhu/FedGen/blob/main/FLAlgorithms/servers/serverFedProx.py)).
+* **FedDistill** and its extension **FedDistll-FL** ([paper](https://arxiv.org/pdf/2011.02367.pdf) and [code](https://github.com/zhuangdizhu/FedGen/blob/main/FLAlgorithms/servers/serverFedDistill.py)).
+
+![FenGen-overview](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/68efaaec-429d-40cc-95fe-a11dda2ea108)
+
+
 ## FedX
 
 The PyTorch code of paper [FedX: Unsupervised Federated Learning with Cross Knowledge Distillation](https://arxiv.org/abs/2207.09158) (ECCV 2022).
