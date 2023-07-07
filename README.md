@@ -262,6 +262,17 @@ This repository does not only implement pFedMe but also FedAvg, and Per-FedAvg a
 [code](https://github.com/JevenM/FedKD)
 
 
+## CSD
+
+This folder contains code accompanying the submission: [Efficient Domain Generalization via Common-Specific Low-Rank Decomposition (ICML 2020)](https://arxiv.org/abs/2003.12815).
+
+[code](https://github.com/vihari/CSD/tree/master)
+
+
+
+
+
+
 ## F2L
 
 [Federated Few-shot Learning](https://arxiv.org/pdf/2306.10234.pdf)
@@ -275,6 +286,23 @@ Then run the command:
 `python main.py`
 
 [code](https://github.com/SongW-SW/F2L)
+
+
+# FedRich
+
+Pytorch implementation for FedRich(FedRich: Towards Efficient Federated Learning for Heterogeneous Clients Using Heuristic Scheduling).
+
+## Usage
+```shell
+cd training
+python training.py
+```
+
+[paper]()
+[code](https://github.com/ziz-wang/FedRich)
+
+
+
 
 
 
