@@ -299,6 +299,7 @@ python training.py
 ```
 
 [paper]()
+
 [code](https://github.com/ziz-wang/FedRich)
 
 
