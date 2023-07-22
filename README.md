@@ -318,6 +318,9 @@ python training.py
 
 
 ## FedBABU
+
+fork 自 LG-FedAvg
+
 [Official] FedBABU: Toward Enhanced Representation for Federated Image Classification
 This repository is the official implementation of "FedBABU: Towards Enhanced Representation for Federated Image Classification" paper presented in ICLR 2022. Thanks to the contributors. 
 
@@ -331,6 +334,20 @@ Please refer to ./scripts folder.
 [Paper](https://openreview.net/forum?id=HuaYQfggn5u)
 
 [code](https://github.com/jhoon-oh/FedBABU)
+
+## LG-FedAvg
+
+[Think Locally, Act Globally: Federated Learning with Local and Global Representations](https://arxiv.org/abs/2001.01523)
+
+NeurIPS 2019 Workshop on Federated Learning (distinguished student paper award). (*equal contribution)
+
+Pytorch implementation for federated learning with local and global representations.
+
+[code](https://github.com/pliang279/LG-FedAvg)
+
+
+
+
 
 
 
