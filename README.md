@@ -301,9 +301,9 @@ Then run the command:
 [code](https://github.com/SongW-SW/F2L)
 
 
-# FedRich
+## FedRich
 
-Pytorch implementation for FedRich(FedRich: Towards Efficient Federated Learning for Heterogeneous Clients Using Heuristic Scheduling).
+Pytorch implementation for [FedRich](https://www.sciencedirect.com/science/article/abs/pii/S0020025523009453) (FedRich: Towards Efficient Federated Learning for Heterogeneous Clients Using Heuristic Scheduling).
 
 ## Usage
 ```shell
@@ -311,9 +311,27 @@ cd training
 python training.py
 ```
 
-[paper]()
+[paper](https://www.sciencedirect.com/science/article/abs/pii/S0020025523009453)
 
 [code](https://github.com/ziz-wang/FedRich)
+
+
+
+## FedBABU
+[Official] FedBABU: Toward Enhanced Representation for Federated Image Classification
+This repository is the official implementation of "FedBABU: Towards Enhanced Representation for Federated Image Classification" paper presented in ICLR 2022. Thanks to the contributors. 
+
+### Data
+We run FedBABU and other FL algorithms experiments on CIFAR10 and CIFAR100 using 4convNet, mobileNet, and ResNet.
+
+### Script for running
+
+Please refer to ./scripts folder.
+
+[Paper](https://openreview.net/forum?id=HuaYQfggn5u)
+
+[code](https://github.com/jhoon-oh/FedBABU)
+
 
 
 
