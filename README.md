@@ -116,6 +116,14 @@ The code for paper(ICDM22 Regular Paper) [FedSkip: Combatting Statistical Hetero
 ![image](https://user-images.githubusercontent.com/23145731/209555744-2a25d92c-c7cf-4a4a-9250-4ea1f0df229b.png)
 
 
+## FedRCIL
+The source code of the paper "FedRCIL: Federated Knowledge Distillation for Representation-based Contrastive Incremental Learning" that will be presented in the ICCV workshop "The First Workshop on Visual Continual Learning"
+
+[code](https://github.com/chatzikon/FedRCIL)
+
+### Proposed method
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/81b1c6ad-ae90-46bc-9941-561c4be04f29)
+
 
 ## FedClassAvg
 
