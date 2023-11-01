@@ -4,6 +4,20 @@ An organized list of open source code for some research papers I have read.
 > Almost all the source files of the paper can be found in the local zotero
 
 
+## Visual Prompt Tuning
+
+This repository contains the official PyTorch implementation for Visual Prompt Tuning.
+
+[Visual Prompt Tuning](https://arxiv.org/abs/2203.12119)
+
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/f8a752da-9415-4bec-97aa-affcc61e843c)
+
+
+## FedPrompt
+
+[code](https://github.com/wuch15/FedPrompt/tree/main)
+
+
 
 ## Benchmark
 
@@ -17,10 +31,38 @@ Homepage: [leaf.cmu.edu](https://leaf.cmu.edu/)
 Paper: ["LEAF: A Benchmark for Federated Settings"](https://arxiv.org/abs/1812.01097)
 
 
+## PromptFL
+[code](https://github.com/PEILab-Federated-Learning/PromptFL/tree/main)
 
+```@article{guo2022promptfl,
+  title={PromptFL: Let Federated Participants Cooperatively Learn Prompts Instead of Models--Federated Learning in Age of Foundation Model},
+  author={Guo, Tao and Guo, Song and Wang, Junxiao and Xu, Wenchao},
+  journal={arXiv preprint arXiv:2208.11625},
+  year={2022}
+}
+```
 
+## DAM-VP
+Diversity-Aware Meta Visual Prompting (CVPR 2023)
 
+This repository provides the official PyTorch implementation of the following conference paper:
 
+[Diversity-Aware Meta Visual Prompting (CVPR 2023)](https://arxiv.org/abs/2303.08138)
+
+Qidong Huang1, Xiaoyi Dong1, Dongdong Chen2, Weiming Zhang1, Feifei Wang1, Gang Hua3, Nenghai Yu1
+1University of Science and Technology of China, 2Microsoft Cloud AI, 3Wormpex AI Research
+
+[code](https://github.com/shikiw/DAM-VP)
+
+## SFL-Structural-Federated-Learning
+
+**Personalized Federated Learning with Graph**
+
+This is the original pytorch implementation of Structural Federated Learning(SFL) in the following paper
+
+[Personalized Federated Learning with Graph, IJCAI 2022](https://arxiv.org/abs/2203.00829).
+
+[code](https://github.com/dawenzi098/SFL-Structural-Federated-Learning/tree/main)
 
 
 # Euclidean spatial data
@@ -162,6 +204,26 @@ In this repository, we release the official implementation for FLIS algorithms (
 Some parts of our code and implementation has been adapted from [NIID-Bench](https://github.com/Xtra-Computing/NIID-Bench) repository.
 
 
+## FSMAFL
+
+[code](https://github.com/FangXiuwen/FSMAFL)
+
+ACM International Conference on Multimedia
+
+This is the MindSpore implementation of FSMAFL in the following paper.
+
+Wenke Huang, Mang Ye, Xiang Gao, Bo Du. ** Few-Shot Model Agnostic Federated Learning **, in ACM MM, 2022.
+
+### FSMAFL Description
+FSMAFL(Few-Shot Model Agnostic Federated Learning) is a latent embedding adaptation framework that can address the large domain gap between the public and private datasets in federated learning process. It is based on two parts:
+
+- Latent embedding adaptation confuses domain classifier to reduce the impact of domain gap.
+
+- Model agnostic federated learning is responsible for public-private communication. The public dataset acts as the bridge for model communication and private dataset is used for avoiding forgetting.
+
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/f57abfcd-3293-40bb-a18f-7248565a2fd7)
+
+
 ## NIID-Bench
 
 This is the code of paper [Federated Learning on Non-IID Data Silos: An Experimental Study]()
@@ -187,6 +249,18 @@ The global model in FL setting with DisTrans learns better features than with st
 We perform extensive evaluation of DisTrans using five different image datasets and compare it against SOTA methods. DisTrans outperforms SOTA FL methods across various distributional settings of the clients' local data by 1%--10% with respect to testing accuracy. Moreover, our evaluation shows that \sys achieves 1%--7% higher testing accuracy than data transformation (or augmentation), i.e., mixup and AdvProp.
 
 For more details of our method and evaluations, please refer to Section 5 of the paper.
+
+## HFL_Survey
+
+### Hetergeneous Federated Learning
+
+** Heterogeneous Federated Learning: State-of-the-art and Research Challenges** (Accepted to ACM Computing Surveys)
+
+Mang Ye, Xiuwen Fang, Bo Du, Pong C. Yuen, Dacheng Tao
+
+Survey for Hetergeneous Federated Learning by MARS Group at the Wuhan University, led by [Prof. Mang Ye](https://marswhu.github.io/index.html).
+
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/be95b52b-effb-4451-ab9a-258856966a9b)
 
 
 ## mean-teacher
@@ -354,6 +428,16 @@ Pytorch implementation for federated learning with local and global representati
 [code](https://github.com/pliang279/LG-FedAvg)
 
 
+## CoOp & CoCop
+
+**Prompt Learning for Vision-Language Models**
+
+This repo contains the codebase of a series of research projects focused on adapting vision-language models like CLIP to downstream datasets via prompt learning:
+
+[Conditional Prompt Learning for Vision-Language Models](https://arxiv.org/abs/2203.05557), in CVPR, 2022.
+[Learning to Prompt for Vision-Language Models](https://arxiv.org/abs/2109.01134), IJCV, 2022.
+
+[code](https://github.com/KaiyangZhou/CoOp)
 
 
 
@@ -398,6 +482,32 @@ Please cite the above paper if you use the datasets or code in this repo.
 The models are implemented mainly in trans_model.py (transductive) and ind_model.py (inductive), with inheritance from base_model.py. You might refer to the source files for detailed API documentation.
 
 [code](https://github.com/kimiyoung/planetoid/tree/master)
+
+## HKD
+
+Code for ICCV 2021 paper "Distilling Holistic Knowledge with Graph Neural Networks"
+
+[paper](https://arxiv.org/abs/2108.05507)
+
+[code](https://github.com/wyc-ruiker/HKD)
+
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/037d0030-1af2-41eb-b25c-244182689cd2)
+
+
+## MetePFL
+
+**Prompt Federated Learning for Weather Forecasting: Toward Foundation Models on Meteorological Data**
+
+This is the official repository for the paper 
+
+[Prompt Federated Learning for Weather Forecasting: Toward Foundation Models on Meteorological Data](https://arxiv.org/abs/2301.09152)
+
+Accepted by IJCAI'23 .
+
+[code](https://github.com/shengchaochen82/MetePFL/tree/main)
+
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/6fe1c898-6cd8-465b-be21-39ddcdb4e6d4)
+
 
 
 ## GraphFL
