@@ -15,6 +15,8 @@ This repository contains the official PyTorch implementation for Visual Prompt T
 
 ## FedPrompt
 
+也是一个基于Bert的预训练大语言模型。
+
 [code](https://github.com/wuch15/FedPrompt/tree/main)
 
 
@@ -41,6 +43,45 @@ Paper: ["LEAF: A Benchmark for Federated Settings"](https://arxiv.org/abs/1812.0
   year={2022}
 }
 ```
+
+## LM-BFF
+
+[code][https://github.com/princeton-nlp/LM-BFF]
+
+LM-BFF (Better Few-shot Fine-tuning of Language Models)
+
+This is the implementation of the paper [Making Pre-trained Language Models Better Few-shot Learners](https://arxiv.org/pdf/2012.15723.pdf). 
+
+LM-BFF is short for better few-shot fine-tuning of language models.
+
+### overview
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/386e56ae-c724-42bc-ad22-f7fbc07a4574)
+
+In this work we present LM-BFF, a suite of simple and complementary techniques for fine-tuning pre-trained language models on a small number of training examples. Our approach includes:
+
+Prompt-based fine-tuning together with a novel pipeline for automating prompt generation.
+A refined strategy for incorporating demonstrations into context.
+
+## PromptDA
+
+The code for [PromptDA: Label-guided Data Augmentation for Prompt-based Few-Shot Learners](https://arxiv.org/abs/2205.09229)
+Canyu Chen, Kai Shu
+
+Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2023 Main Conference Long Paper).
+
+[Paper](https://arxiv.org/abs/2205.09229) [Slides](https://drive.google.com/file/d/1BqC1ge1n6iNYxpN81qQT9hdjHLuQz_bn/view?usp=sharing) [Poster](https://drive.google.com/file/d/11z-41wLJLdtmEMin9LnpzD63PhW27vBm/view?usp=sharing)
+
+[code][https://github.com/canyuchen/PromptDA/tree/main]
+
+### BAsic Idea
+
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/490779ec-977e-42f8-a4a3-ff91b886def7)
+The basic comparison of conventional data augmentation methods Synonym Substitution and our proposed augmentation framework PromptDA. good, great, fine are the label words for prompt tuning. Conventional DA constructs instances for augmentation, but PromptDA constructs instance-label pairs for augmentation.
+
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/c6f60f82-c7a8-46ba-8f5c-424f3aca9bee)
+
+
+
 
 ## DAM-VP
 Diversity-Aware Meta Visual Prompting (CVPR 2023)
