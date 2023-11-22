@@ -115,6 +115,12 @@ This is the original pytorch implementation of Structural Federated Learning(SFL
 Implementation of multiple basic federated learning algorithms.
 
 
+## Knowledge-guided-Federated-Graph-Attention-Learning-
+
+[code](https://github.com/Xuegang-S/Knowledge-guided-Federated-Graph-Attention-Learning-)
+
+
+
 ## federated-learning-with-pytorch
 
 This repo contains code for training models in a federated fashion using PyTorch and Slurm. This includes simple local training, federated averaging, and personalization. Moreover, this repo reproduces the results of the paper [Certified Robustness in Federated Learning](https://arxiv.org/pdf/2206.02535.pdf) Preprint.
@@ -396,6 +402,26 @@ This repository does not only implement pFedMe but also FedAvg, and Per-FedAvg a
 ## FedKD
 
 [code](https://github.com/JevenM/FedKD)
+
+
+## FedKD
+
+#### Federated Learning w/ Knowledge Distillation
+
+[code](https://github.com/gong-xuan/FedKD)
+
+![image](https://github.com/JevenM/PytorchResearchCodesReading/assets/23145731/9b1e3d17-b072-49ca-a979-d6d900ab0035)
+
+This repository contains the implementation for [Preserving Privacy in Federated Learning with Ensemble Cross-Domain Knowledge Distillation (AAAI 2022)](https://ojs.aaai.org/index.php/AAAI/article/view/21446).
+
+Contact: Xuan Gong (xuangong@buffalo.edu)
+
+
+## FedMAD
+
+#### Federated Learning with Multi-head Attention Distillation
+
+fork 的 https://github.com/gong-xuan/FedKD，在这个基础上改的
 
 
 ## CSD
