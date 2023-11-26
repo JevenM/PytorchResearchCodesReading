@@ -651,6 +651,41 @@ If you find our work useful in your research, please consider citing:
   doi={10.1109/TMM.2022.3210376}}
 ```
 
+# Graph matching / Model fusion
+
+## FedMA
+
+### Federated Learning with Matched Averaging
+This is the code accompanying the ICLR 2020 paper "Federated Learning with Matched Averaging " Paper link: [https://openreview.net/forum?id=BkluqlSFDS]
+
+### Overview
+FedMA algorithm is designed for federated learning of modern neural network architectures e.g. convolutional neural networks (CNNs) and LSTMs. FedMA constructs the shared global model in a layer-wise manner by matching and averaging hidden elements (i.e. channels for convolution layers; hidden states for LSTM; neurons for fully connected layers) with similar feature extraction signatures.
+
+[code](https://github.com/IBM/FedMA/tree/master)
+
+## GAMF(Graduated Assignment Model Fusion)
+
+[code](https://github.com/Thinklab-SJTU/GAMF)
+
+This repo provides code for 'Deep Neural Network Fusion via Graph Matching with Applications to Model Ensemble and Federated Learning', ICML 2022.
+
+Run federated_learning_with_FedML.py to test the performance of our proposed GAMF.
+
+
+
+
+# FL Framework
+
+## FedML
+
+[code](https://github.com/FedML-AI/FedML)
+
+FEDML Open Source: A Unified and Scalable Machine Learning Library for Running Training and Deployment Anywhere at Any Scale
+
+FedML Documentation: https://doc.fedml.ai
+
+FedML Homepage: https://fedml.ai/
+
 
 
 # Attacks against FL
