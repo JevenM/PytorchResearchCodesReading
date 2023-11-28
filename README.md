@@ -688,7 +688,12 @@ FedML Homepage: https://fedml.ai/
 
 
 
+
 # Attacks against FL
+
+## adv_reprogramming
+A PyTorch implementation of the paper "Adversarial Reprogramming of Neural Networks" : https://arxiv.org/abs/1806.11146
+[code](https://github.com/abhigoyal1997/adv_reprogramming/tree/master)
 
 ## DBA
 
