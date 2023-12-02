@@ -692,8 +692,33 @@ FedML Homepage: https://fedml.ai/
 # Attacks against FL
 
 ## adv_reprogramming
+
 A PyTorch implementation of the paper "Adversarial Reprogramming of Neural Networks" : https://arxiv.org/abs/1806.11146
 [code](https://github.com/abhigoyal1997/adv_reprogramming/tree/master)
+
+## adversarial_reprogramming
+
+Code for PyTorch implementation of [adversarial reprogramming](https://arxiv.org/abs/1806.11146).
+
+#### Requirements :
+PyTorch 0.4+
+Python 3.6
+
+#### Instructions :
+
+Train a ResNet18 on CIFAR10 using following code
+
+```python
+python train.py
+```
+
+Then reprogram the ResNet18 to classify MNIST digits
+
+```python
+python adv_reprogram.py
+```
+[code](https://github.com/ashutoshbsathe/adversarial_reprogramming/tree/master)
+
 
 ## DBA
 
