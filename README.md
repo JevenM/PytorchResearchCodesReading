@@ -717,7 +717,10 @@ Then reprogram the ResNet18 to classify MNIST digits
 ```python
 python adv_reprogram.py
 ```
+
 [code](https://github.com/ashutoshbsathe/adversarial_reprogramming/tree/master)
+
+60003上有一份，在/home/mwj/codes/my/PromptFL/ADVRP
 
 
 ## DBA
