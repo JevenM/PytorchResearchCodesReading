@@ -694,7 +694,10 @@ FedML Homepage: https://fedml.ai/
 ## adv_reprogramming
 
 A PyTorch implementation of the paper "Adversarial Reprogramming of Neural Networks" : https://arxiv.org/abs/1806.11146
+
 [code](https://github.com/abhigoyal1997/adv_reprogramming/tree/master)
+
+本地代码在60003的/home/mwj/codes/my/PromptFL/ADV
 
 ## adversarial_reprogramming
 
