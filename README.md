@@ -725,6 +725,25 @@ python adv_reprogram.py
 
 60003上有一份，在/home/mwj/codes/my/PromptFL/ADVRP
 
+## Adversarial-Reprogramming-tensorflow
+
+TensorFlow implementation of Adversarial Reprogramming of Neural Networks https://arxiv.org/abs/1806.11146
+
+[code](https://github.com/lizhuorong/Adversarial-Reprogramming-tensorflow)
+
+## Adversarial_Reprogramming
+
+#### Introduction
+
+This repo is a pytorch implementation of the [paper](https://arxiv.org/abs/1806.11146). We aim to reprogram the pretrained imagenet models for MNIST classification. 
+
+Following the code, you can easily add more datasets and other pretrained imagenet models for more experiments.
+
+- The main_raw.py is the rough version from scratch.
+- The main_single.py is the old version that is only able to train on a single gpu card.
+- The main.py is the final version that supports multi-gpu training.
+
+[code](https://github.com/Prinsphield/Adversarial_Reprogramming)
 
 ## DBA
 
